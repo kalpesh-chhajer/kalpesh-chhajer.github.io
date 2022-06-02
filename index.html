@@ -1,1 +1,200 @@
-WIP
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dr. Kalpesh Chhajer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+
+    <!-- To show hamburger nav bar button on top right of screen -->
+    <span class="navBarHamburgerButton" onclick="openNavBarOverlay()">&#9776;</span>
+
+    <!-- To always show nav barbackground in mobile with device wdith less than 768px -->
+    <div class="fixed-top mobileNavBarBackground"></div>
+
+    <!-- To always show nav barbackground in mobile with device wdith less than 768px -->
+    <div class="fixed-top largeScreenNavBarBackground" id="navBarBackground" style="display: none;"></div>
+
+    <div id="navBarOverlay" class="navBarOverlay">
+        <a href="javascript:void(0)" class="navBarOverlayCloseButton" onclick="closeNavBarOverlay()">&times;</a>
+        <div class="navBarOverlay-content mx-auto">
+            <a href="#home">Home</a>
+            <a href="#ourServices">Our Services</a>
+            <a href="#knowYourDoctor">Know Your Doctor</a>
+            <a href="#">Testimonial</a>
+            <a href="#">Gallery</a>
+            <a href="#contactUs">Contact us</a>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row" id="home">
+            <div class="col-sm-6" style="padding-left: 0px; padding-right: 0px;">
+                <img class="img-responsive" src="assets/main_profile1.jpg" style="width:100%; overflow: auto;">
+            </div>
+            <div class="col-sm-6 container d-flex align-items-center justify-content-center" style="background-color:#00796b; color: white; padding-top: 10%; padding-bottom: 10%; background-image: url('assets/main_background.jpg');">
+                <div>
+                    <h4 style="font-size: 36px;">Dr. Kalpesh Chhajer</h4>
+                    <p class="font-italic" style="font-size: 18px;">MDS (Oral & Maxillofacial surgery), FIIO (Fellow in Oral Oncosurgery)</p>
+                    <p class="font-weight-bold" style="font-size: 18px;">Consultant Maxillofacial Onco & MicroVascular Reconstructive Surgeon</p>
+                    <p><a style="font-size: 18px; color: white;" href="#"><i class="material-icons" style="font-size: 21px; vertical-align: middle;margin-right: 8px;">call</i>9876543210</a></p>
+                    <p><a style="font-size: 18px; color: white;" href="#"><i class="material-icons" style="font-size: 21px; vertical-align: middle;margin-right: 8px;">mail</i> joh.doe@gmail.com</a></p>
+                    <p><a style="font-size: 18px; color: white;" href="#"><i class="material-icons" style="font-size: 21px; vertical-align: middle;margin-right: 8px;">whatsapp</i> 9876543210</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ourServices" id="ourServices">
+            <div class="col-xl-9 container d-flex align-items-center justify-content-center" id="accordion">
+                <div style="width: 100%;">
+                    <h1 class="display-5 text-center">Our Services</h1>
+                    <div class="card">
+                        <a class="card-header card-link servicesHeader" data-toggle="collapse" href="#collapseOne">Oral & Oropharyngeal Cancer (Mouth Cancer)</a>
+                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                            <div class="card-body servicesBody">
+                                Includes cancer of lips, buccal mucosa and commissure, tongue, floor of mouth, maxillary (upper) & mandibular (lower) jaw, gingivo buccal sulcus (GBS), hard and soft palate, base of tongue, retromolar trigone (RMT), tonsils, lateral pharyngeal wall.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a class="card-header collapsed card-link servicesHeader" data-toggle="collapse" href="#collapseTwo">Salivary Gland Disorders</a>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body servicesBody">
+                                <ol>
+                                    <li>Cancer of parotid, submandibular, sublingual & minor salivary glands.</li>
+                                    <li>Stones (sialoliths) of parotid & submandibular glands.</li>
+                                    <li>Auto-immune disorders involving glands.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a class="card-header collapsed card-link servicesHeader" data-toggle="collapse" href="#collapseThree">Microvascular Reconstruction</a>
+                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="card-body servicesBody">
+                                Free fibula flap, anterolateral thigh free flap, radial forearm free flap, medial sural artery free flap (MSAP), deep circumflex iliac artery free flap (DCIA), dorsalis pedis free flap, gracilis free flap, scapula free flap.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a class="card-header collapsed card-link servicesHeader" data-toggle="collapse" href="#collapseFour">Oral Submucous Fibrosis (OSMF)</a>
+                        <div id="collapseFour" class="collapse" data-parent="#accordion">
+                            <div class="card-body servicesBody">
+                                Mouth opening surgery for OSMF.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a class="card-header collapsed card-link servicesHeader" data-toggle="collapse" href="#collapseFive">Precancerous lesions and conditions</a>
+                        <div id="collapseFive" class="collapse" data-parent="#accordion">
+                            <div class="card-body servicesBody">
+                                Excision of lesions with lasers.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a class="card-header collapsed card-link servicesHeader" data-toggle="collapse" href="#collapseSix">Maxillofacial Surgery</a>
+                        <div id="collapseSix" class="collapse" data-parent="#accordion">
+                            <div class="card-body servicesBody">
+                                <ol>
+                                    <li>Cyst & tumors of jaw, face, scalp & neck.</li>
+                                    <li>Temporomandibular Joint Disorders (TMJ): TMJ ankylosis, internal derangement, myofascial pain dysfunction syndrome (MPDS).</li>
+                                    <li>Rehabilitation with implants: maxillofacial implants include zygomatic, pterygoid & dental implants, patient specific implants (PSI).</li>
+                                    <li>Sinus surgery: Open and endoscopic assisted (for fungal infections like mucormycosis, aspergillosis)</li>
+                                    <li>Orofacial pain: Trigeminal neuralgia, atypical facial pain, burning mouth syndrome.</li>
+                                    <li>Trauma: Hard and soft tissue injuries.</li>
+                                    <li>Orthognathic surgery (Jaw correction surgery)</li>
+                                    <li>Earlobe correction</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="knowYourDoctor" class="row knowYourDoctor">
+            <div class="col-lg-6 container d-flex align-items-center justify-content-center">
+                <div>
+                    <h1 class="display-5 text-center">Know Your Doctor</h1>
+                    <p class="text-justify">
+                        Dr Kalpesh Chhajer is a Consultant Oral Onco & Reconstructive Surgeon specialized in management of various benign and malignant pathologies of Head and Neck region. He performs surgeries like <b>Oral cancer resection & reconstruction</b>,
+                        management of cyst and tumours of laws. face and scalp cancers, salivary gland tumours <b>Microvascular free flaps</b>, Salivary gland disorders like sialolithiasis (stone removal), <b>TMJ disorders (Arthoscopy, Arthrocentesis and open
+                    joint surgery)</b>, Maxillofacial trauma, Jaw correction surgeries (Orthognathic surgery), Maxillofacial Implants to name a few. <b>He has a keen interest in Micro vascular free flaps and 3D printing technology assisted reconstruction of
+                    face</b>.
+                        </br>
+                        </br>
+                        He is trained from premier institute of India like <b>Kidwai Memorial Institute of Oncology, Bangalore</b>, Bapuji educational association and trained in <b>microvascular surgery</b> from Ganga hospital, Coimbatore (Basics) and
+                        advanced clinical training from Kolkata. He has also received <b>certified training in Palliative Medicine</b> from Indian Association of Palliative Care. <b>He has also received formal training in TMJ arthroscopy and TM joint replacement by Dr
+                    Gary Warburton (USA) and Dr Andrew Sidebottom (UK)</b>.
+                        </br>
+                        </br>
+                        Dr Kalpesh Chhajer is <b>Director of Pushpa's Maxillofacial Cancer & Rehabilitation Centre, Shahibaug, Ahmedabad</b>, Director of Sanjeevani Head and Neck Cancer Surgeons, Ahmedabad and <b>Chief Consultant Oral Onco & Reconstructive Surgeon
+                    at GRMI -Rajasthan Hospitals</b>. He has attachments with various hospitals of Ahmedabad like Apollo CBCC cancer centre, SAL hospital, BAPS hospital, SBM hospital, Anand Surgical Hospital, Ratan Hospital.
+                        </br>
+                        </br>
+                        Honorary visiting consultant Oral Onco & Reconstructive Surgeon at BIMS, Bhavanagar and Pushpa Multispeciality Hospital, Balotra, Rajasthan.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="contactUs">
+            <div class="col-lg-6" style="background-color: #4db6ac;">
+                <div id="makeAnAppointment" class="container" style="padding-top: 4%; padding-bottom: 4%;">
+                    <h2 class="text-center">Make an appointment</h2>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="tel" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Time:</label>
+                            <input type="datetime-local" class="form-control" id="time" placeholder="Enter your preferred time" name="time">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea rows="3" class="form-control" id="message" placeholder="Enter your message" name="message"></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="background-color: #00796b; color: white;">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6" style="background-color: #00897b; color: white;">
+                <div id="makeAnAppointment" class="container" style="padding-top: 4%; padding-bottom: 4%;">
+                    <h2 class="text-center">Contact Info</h2>
+                    <p><a style="font-size: 18px; color: white;" target="_blank" href="https://www.google.com/maps?ll=23.052098,72.594533&z=15&t=m&hl=en-IN&gl=US&mapclient=embed&cid=16711229708433381979"><i class="material-icons" style="font-size: 21px; vertical-align: middle;margin-right: 8px;">location_on</i>Pushpa’s Multispeciality Dental Clinic, Mallinath Complex, Navroji Pestonji Vakil Marg, Jain Colony, Girdhar Nagar, Ahmedabad, Gujarat 380004</a></p>
+
+                    <p><a style="font-size: 18px; color: white;" href="#"><i class="material-icons" style="font-size: 21px; vertical-align: middle;margin-right: 8px;">call</i>9876543210</a></p>
+
+                    <p><a style="font-size: 18px; color: white;" href="#"><i class="material-icons" style="font-size: 21px; vertical-align: middle;margin-right: 8px;">whatsapp</i> 9876543210</a></p>
+
+                    <p><a style="font-size: 18px; color: white;" href="#"><i class="material-icons" style="font-size: 21px; vertical-align: middle;margin-right: 8px;">mail</i> joh.doe@gmail.com</a></p>
+
+                    <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Pushpa%E2%80%99s%20Multispeciality%20Dental%20Clinic%20Ahmedabad&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
