@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="Dr. Kalpesh Chhajer" href="assets/siteIcon.jpeg">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -31,8 +32,7 @@
             <a href="#home">Home</a>
             <a href="#ourServices">Our Services</a>
             <a href="#knowYourDoctor">Know Your Doctor</a>
-            <a href="#">Testimonial</a>
-            <a href="#">Gallery</a>
+            <a href="#demo">Gallery</a>
             <a href="#contactUs">Contact us</a>
         </div>
     </div>
@@ -40,7 +40,7 @@
     <div class="container-fluid">
         <div class="row" id="home">
             <div class="col-sm-6" style="padding-left: 0px; padding-right: 0px;">
-                <img class="img-responsive" src="assets/main_profile1.jpg" style="width:100%; overflow: auto;">
+                <img class="img-responsive" src="assets/profile.jpeg" style="width:100%; overflow: auto;">
             </div>
             <div class="col-sm-6 container d-flex align-items-center justify-content-center" style="background-color:#00796b; color: white; padding-top: 10%; padding-bottom: 10%; background-image: url('assets/main_background.jpg');">
                 <div>
@@ -49,7 +49,9 @@
                     <p class="font-weight-bold" style="font-size: 18px;">Consultant Maxillofacial Onco & MicroVascular Reconstructive Surgeon</p>
                     <p><a style="font-size: 18px; color: white;" href="#"><i class="material-icons" style="font-size: 21px; vertical-align: middle;margin-right: 8px;">call</i>9876543210</a></p>
                     <p><a style="font-size: 18px; color: white;" href="#"><i class="material-icons" style="font-size: 21px; vertical-align: middle;margin-right: 8px;">mail</i> joh.doe@gmail.com</a></p>
-                    <p><a style="font-size: 18px; color: white;" href="#"><i class="material-icons" style="font-size: 21px; vertical-align: middle;margin-right: 8px;">whatsapp</i> 9876543210</a></p>
+                    <p>
+                        <a style="font-size: 18px; color: white;" href="https://wa.me/919530277235?text=Hello"> <img src="assets/whatsapp.svg " style="height: 21px; vertical-align: middle;margin-right: 8px; color: white;"> 9876543210</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -123,11 +125,11 @@
             </div>
         </div>
 
-        <div id="knowYourDoctor" class="row knowYourDoctor">
-            <div class="col-lg-6 container d-flex align-items-center justify-content-center">
+        <div id="knowYourDoctor " class="row knowYourDoctor ">
+            <div class="col-lg-6 container d-flex align-items-center justify-content-center ">
                 <div>
-                    <h1 class="display-5 text-center">Know Your Doctor</h1>
-                    <p class="text-justify">
+                    <h1 class="display-5 text-center ">Know Your Doctor</h1>
+                    <p class="text-justify ">
                         Dr Kalpesh Chhajer is a Consultant Oral Onco & Reconstructive Surgeon specialized in management of various benign and malignant pathologies of Head and Neck region. He performs surgeries like <b>Oral cancer resection & reconstruction</b>,
                         management of cyst and tumours of laws. face and scalp cancers, salivary gland tumours <b>Microvascular free flaps</b>, Salivary gland disorders like sialolithiasis (stone removal), <b>TMJ disorders (Arthoscopy, Arthrocentesis and open
                     joint surgery)</b>, Maxillofacial trauma, Jaw correction surgeries (Orthognathic surgery), Maxillofacial Implants to name a few. <b>He has a keen interest in Micro vascular free flaps and 3D printing technology assisted reconstruction of
@@ -149,50 +151,87 @@
             </div>
         </div>
 
-        <div class="row" id="contactUs">
-            <div class="col-lg-6" style="background-color: #4db6ac;">
-                <div id="makeAnAppointment" class="container" style="padding-top: 4%; padding-bottom: 4%;">
-                    <h2 class="text-center">Make an appointment</h2>
-                    <form action="#">
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="tel" class="form-control" id="name" placeholder="Enter your name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number:</label>
-                            <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="date">Time:</label>
-                            <input type="datetime-local" class="form-control" id="time" placeholder="Enter your preferred time" name="time">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea rows="3" class="form-control" id="message" placeholder="Enter your message" name="message"></textarea>
-                        </div>
-                        <button type="submit" class="btn" style="background-color: #00796b; color: white;">Submit</button>
-                    </form>
+        <div id="gallery " class="row gallery ">
+            <div class="col-lg-6 container d-flex align-items-center justify-content-center "></div>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/gallery/media0.jpg" alt="Los Angeles" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/gallery/media1.jpeg" alt="Chicago" width="1100" height="500">
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6" style="background-color: #00897b; color: white;">
-                <div id="makeAnAppointment" class="container" style="padding-top: 4%; padding-bottom: 4%;">
-                    <h2 class="text-center">Contact Info</h2>
-                    <p><a style="font-size: 18px; color: white;" target="_blank" href="https://www.google.com/maps?ll=23.052098,72.594533&z=15&t=m&hl=en-IN&gl=US&mapclient=embed&cid=16711229708433381979"><i class="material-icons" style="font-size: 21px; vertical-align: middle;margin-right: 8px;">location_on</i>Pushpa’s Multispeciality Dental Clinic, Mallinath Complex, Navroji Pestonji Vakil Marg, Jain Colony, Girdhar Nagar, Ahmedabad, Gujarat 380004</a></p>
 
-                    <p><a style="font-size: 18px; color: white;" href="#"><i class="material-icons" style="font-size: 21px; vertical-align: middle;margin-right: 8px;">call</i>9876543210</a></p>
-
-                    <p><a style="font-size: 18px; color: white;" href="#"><i class="material-icons" style="font-size: 21px; vertical-align: middle;margin-right: 8px;">whatsapp</i> 9876543210</a></p>
-
-                    <p><a style="font-size: 18px; color: white;" href="#"><i class="material-icons" style="font-size: 21px; vertical-align: middle;margin-right: 8px;">mail</i> joh.doe@gmail.com</a></p>
-
-                    <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Pushpa%E2%80%99s%20Multispeciality%20Dental%20Clinic%20Ahmedabad&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span style="background-color:black;" class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span style="background-color:black;" class="carousel-control-next-icon"></span>
+                </a>
             </div>
         </div>
+    </div>
+
+    <div class="row " id="contactUs ">
+        <div class="col-lg-6 " style="background-color: #4db6ac; ">
+            <div id="makeAnAppointment " class="container " style="padding-top: 4%; padding-bottom: 4%; ">
+                <h2 class="text-center ">Make an appointment</h2>
+                <form action="# ">
+                    <div class="form-group ">
+                        <label for="name ">Name:</label>
+                        <input type="tel " class="form-control " id="name " placeholder="Enter your name " name="name " required>
+                    </div>
+                    <div class="form-group ">
+                        <label for="phone ">Phone Number:</label>
+                        <input type="text " class="form-control " id="phone " placeholder="Enter your phone number " name="phone " required>
+                    </div>
+                    <div class="form-group ">
+                        <label for="email ">Email:</label>
+                        <input type="email " class="form-control " id="email " placeholder="Enter your email " name="email ">
+                    </div>
+                    <div class="form-group ">
+                        <label for="date ">Time:</label>
+                        <input type="datetime-local " class="form-control " id="time " placeholder="Enter your preferred time " name="time ">
+                    </div>
+                    <div class="form-group ">
+                        <label for="message ">Message:</label>
+                        <textarea rows="3 " class="form-control " id="message " placeholder="Enter your message " name="message "></textarea>
+                    </div>
+                    <button type="submit " class="btn " style="background-color: #00796b; color: white; ">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-6 " style="background-color: #00897b; color: white; ">
+            <div id="makeAnAppointment " class="container " style="padding-top: 4%; padding-bottom: 4%; ">
+                <h2 class="text-center ">Contact Info</h2>
+                <p><a style="font-size: 18px; color: white; " target="_blank " href="https://www.google.com/maps?ll=23.052098,72.594533&z=15&t=m&hl=en-IN&gl=US&mapclient=embed&cid=16711229708433381979 "><i class="material-icons " style="font-size:
+                            21px; vertical-align: middle;margin-right: 8px; ">location_on</i>Pushpa’s Multispeciality Dental Clinic, Mallinath Complex, Navroji Pestonji Vakil Marg, Jain Colony, Girdhar Nagar, Ahmedabad, Gujarat 380004</a></p>
+
+                <p><a style="font-size: 18px; color: white; " href="# "><i class="material-icons " style="font-size: 21px; vertical-align: middle;margin-right: 8px; ">call</i>9876543210</a></p>
+
+                <p>
+                    <a style="font-size: 18px; color: white; " href="# ">
+                        <a style="font-size: 18px; color: white;" href="https://wa.me/919530277235?text=Hello"> <img src="assets/whatsapp.svg " style="height: 21px; vertical-align: middle;margin-right: 8px; color: white;"> 9876543210</a>
+                </p>
+
+                <p><a style="font-size: 18px; color: white; " href="# "><i class="material-icons " style="font-size: 21px; vertical-align: middle;margin-right: 8px; ">mail</i> joh.doe@gmail.com</a></p>
+
+                <iframe width="100% " height="300 " id="gmap_canvas " src="https://maps.google.com/maps?q=Pushpa%E2%80%99s%20Multispeciality%20Dental%20Clinic%20Ahmedabad&t=&z=15&ie=UTF8&iwloc=&output=embed " frameborder="0 " scrolling="no
+                            " marginheight="0 " marginwidth="0 "></iframe>
+            </div>
+        </div>
+    </div>
     </div>
 
 </body>

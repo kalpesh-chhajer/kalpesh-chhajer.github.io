@@ -134,3 +134,16 @@ body {
     padding-left: 6%;
     padding-right: 6%;
 }
+
+.gallery {
+    background-color: var(--primary-bg-color);
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
